@@ -111,9 +111,9 @@
 
             try {
                 // Cargar el PDF original con el nombre correcto
-                const urlPDF = 'secHectorInostroza.pdf'; 
+                const urlPDF = 'SecHectorInostroza.pdf'; 
                 const respuesta = await fetch(urlPDF);
-                if (!respuesta.ok) throw new Error("No se pudo encontrar el archivo secHectorInostroza.pdf");
+                if (!respuesta.ok) throw new Error("No se pudo encontrar el archivo SecHectorInostroza.pdf");
                 const pdfBytesOriginales = await respuesta.arrayBuffer();
                 
                 // Iniciar la modificación del PDF
@@ -159,7 +159,7 @@
 
             } catch (error) {
                 console.error("Error procesando el PDF:", error);
-                alert("Hubo un error al generar el PDF. Verifica que estás en un servidor web y que el archivo secHectorInostroza.pdf existe en la misma carpeta.");
+                alert("Hubo un error al generar el PDF. Verifica que estás en un servidor web y que el archivo SecHectorInostroza.pdf existe en la misma carpeta.");
             } finally {
                 btn.innerText = "Descargar Certificado (PDF)";
                 btn.disabled = false;
